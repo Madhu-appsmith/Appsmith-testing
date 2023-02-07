@@ -29,6 +29,7 @@
             {
               "newButtonColor": "#457AE6",
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "resetButtonEnable": true,
               "isCanvas": false,
               "iconSVG": "/formbuilderui/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
               "editedRowIndices": [],
@@ -140,13 +141,15 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "editedRowsData": [],
               "widgetName": "Tabulator1",
+              "newButtonEnable": true,
               "columnOrder": [
                 "name",
                 "age",
                 "gender",
                 "height",
                 "col",
-                "dob"
+                "dob",
+                "customColumn1"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -159,6 +162,7 @@
               "parentRowSpace": 10,
               "groupBy": "",
               "hideCard": false,
+              "saveButtonEnable": true,
               "parentColumnSpace": 9.953125,
               "dynamicTriggerPathList": [],
               "resetButtonColor": "#B0BFCB",
@@ -283,12 +287,45 @@
                   "headerFilter": true,
                   "sorter": "string",
                   "computedValue": "{{Tabulator1.sanitizedTableData.map((currentRow) => ( currentRow.dob))}}"
+                },
+                "customColumn1": {
+                  "index": 6,
+                  "width": 150,
+                  "id": "customColumn1",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "customColumn1",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF"
                 }
               },
               "saveButton": "Save",
               "movableRows": false,
               "key": "22ebk6wwnd",
-              "derivedColumns": {},
+              "derivedColumns": {
+                "customColumn1": {
+                  "index": 6,
+                  "width": 150,
+                  "id": "customColumn1",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "customColumn1",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF"
+                }
+              },
               "isDeprecated": false,
               "rightColumn": 51,
               "widgetId": "wj2ft8blju",
